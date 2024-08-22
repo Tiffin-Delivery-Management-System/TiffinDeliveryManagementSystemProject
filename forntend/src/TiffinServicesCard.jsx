@@ -13,11 +13,7 @@ function TiffinServicesCard() {
     useEffect(() => {
         const fetchTiffinServices = async () => {
             try {
-                const response = await axios.get(`${config.apiUrl}/home`, {
-                    headers: {
-                        'Authorization': `Bearer ${token}`
-                    }
-                });
+                const response = await axios.get(`${config.apiUrl}/home`);
                 setTiffinServices(response.data);
                 console.log(response.data);
             } catch (error) {
@@ -41,7 +37,44 @@ function TiffinServicesCard() {
                 {tiffinServices.length > 0 ? (
                     tiffinServices.map((m, index) => (
                         <div className='col-md-4 px-4' key={m.serviceId}>
-                            <Link 
+                            {token !=null ?
+                            (<Link 
+                                to={`/tiffins/${m.serviceId}`} 
+                                state={{ serviceName: m.serviceName, address: m.serviceAddress }} 
+                                className="serviceCard text-dark p-3 text-decoration-none"
+                            >
+                                <div className="card mx-4">
+                                    {m.responseImage ? (
+                                        <img src={m.responseImage} className="card-img-top" alt="Service" />
+                                    ) : (
+                                        <img src={handleImageChange(index)} className="card-img-top " alt="Default" />
+                                    )}
+                                    <div className="card-body text-start">
+                                        <h5 className="card-title">{m.serviceName}</h5>
+                                        <p className="card-text">{m.serviceAddress || 'address not available.'}</p>
+                                    </div>
+                                </div>
+                            </Link>):(
+                                <Link 
+                                to={`/signin`} 
+                                state={{ serviceName: m.serviceName, address: m.serviceAddress }} 
+                                className="serviceCard text-dark p-3 text-decoration-none"
+                            >
+                                <div className="card mx-4">
+                                    {m.responseImage ? (
+                                        <img src={m.responseImage} className="card-img-top" alt="Service" />
+                                    ) : (
+                                        <img src={handleImageChange(index)} className="card-img-top " alt="Default" />
+                                    )}
+                                    <div className="card-body text-start">
+                                        <h5 className="card-title">{m.serviceName}</h5>
+                                        <p className="card-text">{m.serviceAddress || 'address not available.'}</p>
+                                    </div>
+                                </div>
+                            </Link>
+                            )    
+                        }
+                            {/* <Link 
                                 to={`/tiffins/${m.serviceId}`} 
                                 state={{ serviceName: m.serviceName, address: m.serviceAddress }} 
                                 className="serviceCard text-dark p-3 text-decoration-none"
@@ -57,7 +90,7 @@ function TiffinServicesCard() {
                                         <p className="card-text">{m.serviceAddress || 'address not available.'}</p>
                                     </div>
                                 </div>
-                            </Link>
+                            </Link> */}
                         </div>
                     ))
                 ) : (

@@ -3,37 +3,38 @@
     height: 100vh;
 } */
 
-.abc{
-    display: flex;
+.abc {
+  display: flex;
 }
 
-.signinsection{
-   
-    height: 80vh; 
-    
-}
-
-.signinleft{
-    /* background-color: #ffa11e4d; */
-    border: 2px solid black;
-    padding: 30px;
-    border-radius: 30px 0px 0px 30px;
+.signinsection {
+  height: 80vh;
 
 }
 
-.signinright{
-    background-color: black;
-    padding: 30px;
-    border-radius: 0px 30px 30px 0px;
+.signinleft {
+  /* background-color: #ffa11e4d; */
+  border: 2px solid black;
+  padding: 30px;
+  border-radius: 30px 0px 0px 30px;
 
 }
 
-.signinLogo{
-    padding: 20px;
+.signinright {
+  background-color: black;
+  padding: 30px;
+  border-radius: 0px 30px 30px 0px;
+
 }
-.loginGroup{
+
+.signinLogo {
+  padding: 20px;
+}
+
+.loginGroup {
   width: 60%;
 }
+
 /* .loginSec {
     height: 100vh;
   }

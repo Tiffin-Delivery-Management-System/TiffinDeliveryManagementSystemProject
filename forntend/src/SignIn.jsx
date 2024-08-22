@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
-import "./SignIn.css";
 import { Link, useNavigate } from 'react-router-dom';
+import "./SignIn.css";
 
-function SignIn() {
+function SignIn({ setIsLoggedIn }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState(null);
@@ -13,25 +12,26 @@ function SignIn() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            // Use the apiUrl from config
-            const response = await axios.post("http://localhost:8080/login/signin", {
-                email,
-                password
-            });
-
-            // Assuming the token is in response.data.token
-
+            const response = await axios.post("http://localhost:8080/login/signin", { email, password });
 
             sessionStorage.setItem('jwt', response.data.jwt);
             sessionStorage.setItem('id', response.data.id);
             sessionStorage.setItem('role', response.data.mesg);
+            sessionStorage.setItem('img',response.data.img);
+            // sessionStorage.setItem('img', response.data.imgUrl);
+
+            // Update the isLoggedIn state to true
+            setIsLoggedIn(true);
+            
             if (response.data.mesg === "USER") {
-                navigate('/home');
+                console.log(response.data)
+
+                navigate('/');
             } else {
                 navigate('/admin');
             }
-            // Redirect after successful login
         } catch (err) {
+            console.log(err.response ? err.response.data : err.message);
             setError('Invalid email or password');
         }
     };
@@ -115,3 +115,4 @@ function SignIn() {
 }
 
 export default SignIn;
+

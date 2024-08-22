@@ -1,20 +1,36 @@
-.removetext{
-    display: flex;
-    
-}
-.lbCheckOutImg{
-    border-radius: 10px;
-    height: auto;
-    width: 120px;
+.removetext {
+  display: flex;
+
 }
 
-.lbCheckOut {
-  
+.lbCheckOutImg {
+  border-radius: 10px;
+  height: auto;
+  width: 120px;
+}
+
+/* *---------------------------------- */
+@media (max-width:576px) {
+  .lbCheckOutImg {
+    width: 60px;
+  }
+  .itemName{
+    font-size: 16px;
+  }
+  .removetext{
+    font-size: 14px;
+  }
+}
+
+.checkoutItem{
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
 }
 
 .lbCheckOutHeading {
   margin-bottom: 20px;
 }
+
 .lbCheckOutHeading h5 {
   color: #111111;
   font-size: 20px;
@@ -29,43 +45,52 @@
   margin-top: 60px;
   margin-bottom: 40px;
 }
+
 .lbCheckOutBox .lbCheckOutTbl {
   border-radius: 15px;
   background: #ffffff;
   box-shadow: 20px 10px 20px 0px rgba(0, 0, 0, 0.06);
   margin-top: -60px;
 }
+
 .lbCheckOutBox .lbCheckOutTbl .lbCheckOutTblInner {
   display: flex;
   align-items: center;
   border-top: 1px solid #FFA31E;
 }
+
 .lbCheckOutBox .lbCheckOutTbl .lbCheckOutTblInner:first-child {
   border-top: 0;
 }
+
 .lbCheckOutBox .lbCheckOutTbl .lbCheckOutTblInner .lbCheckOutQuantity,
 .lbCheckOutBox .lbCheckOutTbl .lbCheckOutTblInner .lbCheckOutPrice {
   border-left: 1px solid #FFA31E;
   height: 100%;
 }
+
 .lbCheckOutBox .lbCheckOutTbl .lbCheckOutTblInner .lbCheckOutDetail {
   display: grid;
   grid-template-columns: 100px 1fr;
   padding: 20px;
 }
+
 .lbCheckOutBox .lbCheckOutTbl .lbCheckOutTblInner .lbCheckOutDetail .lbCheckOutImg img {
   border-radius: 50%;
 }
+
 .lbCheckOutBox .lbCheckOutTbl .lbCheckOutTblInner .lbCheckOutDetail .lbCheckOutTxt h5 {
   color: #111111;
   font-size: 20px;
   font-weight: 600;
 }
+
 .lbCheckOutBox .lbCheckOutTbl .lbCheckOutTblInner .lbCheckOutDetail .lbCheckOutTxt p {
   color: #999;
   font-size: 14px;
   font-weight: 400;
 }
+
 .lbCheckOutBox .lbCheckOutTbl .lbCheckOutTblInner .lbCheckOutDetail .lbCheckOutTxt .lbProductRemove {
   color: #FFA31E;
   font-size: 14px;
@@ -75,10 +100,12 @@
   gap: 8px;
   margin-top: 10px;
 }
+
 .lbCheckOutBox .lbCheckOutTbl .lbCheckOutTblInner .lbCheckOutQuantity,
 .lbCheckOutBox .lbCheckOutTbl .lbCheckOutTblInner .lbCheckOutPrice {
   padding: 60px 30px;
 }
+
 .lbCheckOutBox .lbCheckOutTbl .lbCheckOutTblInner .lbCheckOutQuantity span,
 .lbCheckOutBox .lbCheckOutTbl .lbCheckOutTblInner .lbCheckOutPrice span {
   white-space: nowrap;
@@ -86,22 +113,26 @@
   font-size: 14px;
   font-weight: 600;
 }
-.lbCheckOutBox .lbCheckOutDetail .pormoCode .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+
+.lbCheckOutBox .lbCheckOutDetail .pormoCode .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
 }
+
 .lbCheckOutBox .lbCheckOutDetail .pormoCode .input-group {
   border-radius: 30px;
   border: 1px solid #E3E3E3;
   background: #F5F5F5;
   padding: 8px;
 }
+
 .lbCheckOutBox .lbCheckOutDetail .pormoCode .input-group .form-control {
   background: #F5F5F5;
   border: 0;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
 }
+
 .lbCheckOutBox .lbCheckOutDetail .pormoCode .input-group .input-group-text {
   width: 160px;
   height: 50px;
@@ -112,27 +143,33 @@
   font-weight: 700;
   border-radius: 100px;
 }
+
 .lbCheckOutBox .lbCheckOutDetail .lbProductsPriceTbl {
   margin-top: 20px;
 }
+
 .lbCheckOutBox .lbCheckOutDetail .lbProductsPriceTbl .table tbody tr td {
   color: #999;
   font-size: 18px;
   font-weight: 400;
 }
+
 .lbCheckOutBox .lbCheckOutDetail .lbProductsPriceTbl .table tbody tr td:last-child {
   text-align: end;
 }
+
 .lbCheckOutBox .lbCheckOutDetail .lbProductsPriceTbl .table tbody tr td strong {
   color: #111111;
   font-size: 20px;
   font-weight: 600;
 }
+
 .lbCheckOutBox .lbCheckOutDetail .lbProductsPriceTbl .table tbody tr td span {
   color: #111111;
   font-size: 18px;
   font-weight: 400;
 }
+
 .lbCheckOutBox .lbCheckOutDetail .lbProductsPriceTbl .table tbody tr:last-child td {
   border-bottom: 0;
 }
@@ -140,9 +177,11 @@
 .lbCheckOutFormDetail .lbCheckOutForm .lbFormGroup {
   margin-bottom: 15px;
 }
+
 .lbCheckOutFormDetail .lbCheckOutForm .lbFormGroup input {
   height: 50px;
 }
+
 .lbCheckOutFormDetail .lbCheckOutForm .lbFormGroup .form-control {
   border-radius: 6px;
   border: 1px solid #E3E3E3;
@@ -151,6 +190,7 @@
   font-weight: 400;
   color: #111111;
 }
+
 .lbCheckOutFormDetail .lbCheckOutForm .lbFormGroup .form-control::placeholder {
   color: #999;
 }
@@ -161,24 +201,31 @@
   background: #ffffff;
   padding: 15px;
 }
+
 .lbPaymentInfo label {
   color: #999;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
 }
-.lbPaymentInfo .lbCheckOutPayment, .lbPaymentInfo .cardHolderName, .lbPaymentInfo .cardNumber {
+
+.lbPaymentInfo .lbCheckOutPayment,
+.lbPaymentInfo .cardHolderName,
+.lbPaymentInfo .cardNumber {
   margin-bottom: 30px;
 }
+
 .lbPaymentInfo .cardNumber .formLabel .formInputGroup {
   display: flex;
   gap: 10px;
 }
+
 .lbPaymentInfo .cardDetail {
   display: grid;
   grid-template-columns: 1fr 100px;
   gap: 15px;
 }
+
 .lbPaymentInfo .cardDetail .formLabel .formSelectGroup {
   display: flex;
   gap: 10px;
@@ -196,33 +243,40 @@
   font-weight: 400;
   margin-bottom: 10px;
 }
+
 .custom_radio .formLabel {
   width: 100%;
   margin-bottom: 10px;
 }
-.custom_radio .formLabel input[type=radio] + label:before {
+
+.custom_radio .formLabel input[type=radio]+label:before {
   transition: all 0.3s ease;
   box-shadow: inset 0 0 0 0.1em #c6c6c6, inset 0 0 0 1em #fff;
   margin-top: 5px;
 }
+
 .custom_radio .formLabel label {
   color: #111111;
   font-size: 20px;
   font-weight: 600;
 }
+
 .custom_radio .formLabel .ratioIcon {
   width: 40px;
   display: inline-block;
   margin-left: 10px;
 }
+
 .custom_radio .formLabel .ratioIcon img {
   width: 30px;
   object-fit: scale-down;
 }
+
 .custom_radio input[type=radio] {
   display: none;
 }
-.custom_radio input[type=radio] + label {
+
+.custom_radio input[type=radio]+label {
   position: relative;
   display: inline-block;
   padding-left: 1.5em;
@@ -230,7 +284,9 @@
   line-height: 1em;
   transition: all 0.3s ease-in-out;
 }
-.custom_radio input[type=radio] + label:before, .custom_radio input[type=radio] + label:after {
+
+.custom_radio input[type=radio]+label:before,
+.custom_radio input[type=radio]+label:after {
   content: "";
   position: absolute;
   top: 0;
@@ -243,15 +299,19 @@
   border-radius: 50%;
   transition: all 0.3s ease;
 }
-.custom_radio input[type=radio] + label:before {
+
+.custom_radio input[type=radio]+label:before {
   transition: all 0.3s ease;
   box-shadow: inset 0 0 0 0.1em #c6c6c6, inset 0 0 0 1em #fff;
 }
-.custom_radio input[type=radio] + label:hover:before {
+
+.custom_radio input[type=radio]+label:hover:before {
   transition: all 0.3s ease;
   box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 1em #c6c6c6;
 }
-.custom_radio input[type=radio]:checked + label:before {
+
+.custom_radio input[type=radio]:checked+label:before {
   transition: all 0.3s ease;
   box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 2em #FFA31E;
 }
+

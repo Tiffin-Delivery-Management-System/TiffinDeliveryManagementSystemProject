@@ -1,3 +1,4 @@
+import AddTiffin from './AddTiffin';
 import './Manager.css'
 
 function Manager() {
@@ -21,6 +22,12 @@ function Manager() {
                                 <a className="nav-link " data-bs-toggle="pill" href="#my-service">
 
                                     <p className="mb-0">My Service</p>
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link " data-bs-toggle="pill" href="#my-tiffin">
+
+                                    <p className="mb-0">Add Tiffin</p>
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -147,6 +154,9 @@ function Manager() {
 
                                     </div>
                                 </div>
+                            </div>
+                            <div className="tab-pane active" id="my-tiffin">
+                                <AddTiffin />
                             </div>
                             <div className="tab-pane active" id="my-order">
                                 <div>
