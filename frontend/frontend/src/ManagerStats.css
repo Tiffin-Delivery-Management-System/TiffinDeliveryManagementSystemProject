@@ -1,0 +1,11 @@
+.statusbtn{
+    transition: o.3ms ease-out;
+    background-color: lightgreen !important;
+    color: white;
+}
+
+.statusbtn:hover{
+    background-color: green !important;
+    color: white;
+
+}

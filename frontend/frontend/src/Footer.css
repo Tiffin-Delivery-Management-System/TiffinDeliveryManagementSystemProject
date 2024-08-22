@@ -1,0 +1,30 @@
+.footer{
+    background-color: rgb(255, 163, 30);
+}
+
+.footerContent{
+
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-top: 2px solid rgb(255, 254, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.footImgDiv p{
+    font-style: oblique;
+    font-weight: 900;
+    letter-spacing: 3px;
+    
+}
+
+.footImg{
+    width: 200px;
+}
+
+@media(max-width:576px){
+    .footImg{
+        width: 100px;
+    }
+    
+}
