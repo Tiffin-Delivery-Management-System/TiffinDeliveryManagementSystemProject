@@ -1,0 +1,86 @@
+.myService .myServiceInner .navTabs {
+    border-radius: 15px;
+    border: 1px solid #FFA31E;
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 40px;
+    transition: all 0.6s ease;
+  }
+  .myService .myServiceInner .navTabs .nav-pills {
+    justify-content: space-between;
+  }
+  .myService .myServiceInner .navTabs .nav-pills li a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 40px 10px 10px;
+    color: #999;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+  }
+  .myService .myServiceInner .navTabs .nav-pills li a span {
+    width: 50px;
+    height: 50px;
+    background-color: #FFA31E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  .myService .myServiceInner .navTabs .nav-pills li a.active {
+    background-color: #FFA31E;
+    color: #ffffff;
+  }
+  .myService .myServiceInner .navTabs .nav-pills li a.active span {
+    background-color: #ffffff;
+    border-radius: 50px;
+  }
+  .myService .myServiceInner .navTabs .nav-pills li a.active span svg path {
+    fill: #FFA31E;
+  }
+  .myService .myServiceInner .tabContent .tab-content .myServiceContent .myServiceBx {
+    border-radius: 15px;
+    border: 1px solid #FFA31E;
+    background: #ffffff;
+    padding: 20px;
+  }
+  .myService .myServiceInner .tabContent .tab-content .myServiceContent .myServiceBx.lbChangePassword {
+    margin-top: 20px;
+  }
+  .myService .myServiceInner .tabContent .tab-content .myServiceContent .myServiceBx .serviceHeading {
+    margin-bottom: 20px;
+  }
+  .myService .myServiceInner .tabContent .tab-content .myServiceContent .myServiceBx .serviceHeading h4 {
+    color: #111111;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .myService .myServiceInner .tabContent .tab-content .myServiceContent .myServiceBx .personalContent .formGroup {
+    border-radius: 6px;
+    border: 1px solid #E3E3E3;
+    background: #F5F5F5;
+    margin-bottom: 20px;
+  }
+  .formGroup {
+    border-radius: 6px;
+    border: 1px solid #E3E3E3;
+    background: #F5F5F5;
+    margin-bottom: 20px;
+  }
+  .myService .myServiceInner .tabContent .tab-content .myServiceContent .myServiceBx .personalContent .formGroup input {
+    height: 50px;
+    border: 0;
+    background: #F5F5F5;
+    color: #999;
+  }
+  
+  .myService .myServiceInner .tabContent .tab-content .myServiceContent .myServiceBx .personalContent .formGroup .input-group-text {
+    border: 0;
+    background: #F5F5F5;
+    color: #FFA31E;
+    font-size: 14px;
+    font-weight: 700;
+  }
